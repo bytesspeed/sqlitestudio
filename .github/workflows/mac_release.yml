@@ -65,9 +65,9 @@ jobs:
                   - webp 1.3.2_0
                   - xz 5.4.5_0
                   - zstd 1.5.5_0
-              - binary_compatibility: darwin_20.arm64-x86_64
-                cflags: -arch arm64 -arch x86_64
-                add_variants: "+universal"
+              - binary_compatibility: darwin_20.arm64
+                cflags: -arch arm64
+                add_variants: ""
                 dmg_postfix: "-macos11.universal"
                 pkgs:
                   - qt5-qtbase 5.15.12_0+openssl
@@ -76,7 +76,7 @@ jobs:
                   - qt5-qtscript 5.15.12_0
                   - qt5-qtsvg 5.15.12_0
                   - qt5-qttools 5.15.12_0
-                qmake_flags: "QMAKE_APPLE_DEVICE_ARCHS=\"arm64 x86_64\""
+                qmake_flags: "QMAKE_APPLE_DEVICE_ARCHS=\"arm64 \""
               
 
         steps:
