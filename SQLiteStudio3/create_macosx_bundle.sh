@@ -104,6 +104,7 @@ fixPluginPaths() {
     	    info "Fixing paths for plugin $PLUGIN_FILE"
             install_name_tool -change libcoreSQLiteStudio.1.dylib "@rpath/libcoreSQLiteStudio.1.dylib" "$PLUGIN_FILE"
             install_name_tool -change libguiSQLiteStudio.1.dylib "@rpath/libguiSQLiteStudio.1.dylib" "$PLUGIN_FILE"
+            install_name_tool -change libpython3.12.dylib "@rpath/libpython3.12.dylib" "$PLUGIN_FILE"            
         fi
         if [ -d "$PLUGIN_FILE" ]; then
             fixPluginPaths "$PLUGIN_FILE"
