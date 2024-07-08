@@ -154,6 +154,7 @@ jobs:
                     -DSQLITE_ENABLE_RTREE \
                     -DSQLITE_ENABLE_MATH_FUNCTIONS
                 sudo cp libsqlite3.0.dylib /usr/local/lib/
+                sudo mkdir -p /usr/local/lib/
                 sudo ln -f -s /usr/local/lib/libsqlite3.0.dylib /usr/local/lib/libsqlite3.dylib
                 sudo cp *.h /usr/local/include/
                 echo "DYLD_LIBRARY_PATH=/usr/local/lib" >> $GITHUB_ENV
