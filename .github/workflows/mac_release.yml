@@ -262,7 +262,6 @@ jobs:
                     QMAKE_CXXFLAGS+="${{ matrix.cflags }}" \
                     CONFIG+=portable \
                     PYTHON_VERSION=$PYTHON_VERSION "INCLUDEPATH+=$pythonLocation/include/python$PYTHON_VERSION" "LIBS += -L$pythonLocation/lib" \
-                    "QMAKE_RPATHDIR+=$pythonLocation/lib" \
                     ../../../Plugins
                 make -j 1
 
