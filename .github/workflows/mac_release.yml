@@ -31,7 +31,7 @@ jobs:
           fail-fast: false
           matrix:
             binary_compatibility:
-              - "darwin_20.arm64"  # macOS 11, the earliest ARM64 version
+              - "darwin_21.arm64"  # macOS 11, the earliest ARM64 version
             include:
               # this list is meant to be synchronized with mac_universal_deps.yml
               - common_pkgs:
