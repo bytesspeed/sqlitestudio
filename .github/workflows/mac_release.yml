@@ -25,14 +25,14 @@ on:
 
 jobs:
     build:
-        runs-on: macos-11
+        runs-on: macos-latest
 
         strategy:
           fail-fast: false
           matrix:
             binary_compatibility:
-              - "darwin_16.x86_64"  # macOS 10.12, the earliest version supported by QT 5.13
-              - "darwin_17.x86_64"  # macOS 10.13, the earliest version supported by QT 5.15
+              #- "darwin_16.x86_64"  # macOS 10.12, the earliest version supported by QT 5.13
+              #- "darwin_17.x86_64"  # macOS 10.13, the earliest version supported by QT 5.15
               #- "darwin_18.x86_64"  # macOS 10.14, the earliest version supported by QT 6.4
               #- "darwin_20.x86_64"  # macOS 11, the earliest version supported by QT 6.5
               - "darwin_20.arm64-x86_64"  # macOS 11, the earliest ARM64 version
