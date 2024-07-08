@@ -70,12 +70,12 @@ jobs:
                 add_variants: ""
                 dmg_postfix: "-macos11.universal"
                 pkgs:
-                  - qt5-qtbase 5.15.12_0+openssl
-                  - qt5-qtdeclarative 5.15.12_0
-                  - qt5-qtimageformats 5.15.12_0
-                  - qt5-qtscript 5.15.12_0
-                  - qt5-qtsvg 5.15.12_0
-                  - qt5-qttools 5.15.12_0
+                  - qt5-qtbase 
+                  - qt5-qtdeclarative 
+                  - qt5-qtimageformats 
+                  - qt5-qtscript 
+                  - qt5-qtsvg 
+                  - qt5-qttools 
                 qmake_flags: "QMAKE_APPLE_DEVICE_ARCHS=\"arm64 \""
               
 
