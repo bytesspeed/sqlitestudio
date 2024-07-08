@@ -3,7 +3,7 @@ env:
     TCL_VERSION: '8.6'
     SQLITE_VERSION: '3410200'
     SQLITE_RELEASE_YEAR: '2023'
-    PYTHON_VERSION: '3.12.3'
+    PYTHON_VERSION: '3.12.4'
     ICU_VERSION: '74.1'
     PORTABLE_DIR: ${{ github.workspace }}/output/portable/SQLiteStudio
     INSTALLBUILDER_DIR: ../ib
