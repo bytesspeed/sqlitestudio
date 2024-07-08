@@ -65,7 +65,7 @@ jobs:
                   - webp 
                   - xz 
                   - zstd 
-              - binary_compatibility: darwin_20.arm64
+              - binary_compatibility: darwin_21.arm64
                 cflags: -arch arm64
                 add_variants: ""
                 dmg_postfix: "-macos11.universal"
