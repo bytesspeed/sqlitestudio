@@ -261,7 +261,7 @@ jobs:
                     $([ ${{ inputs.use_ccache || false }} = false ] || echo "CONFIG+=ccache") \
                     QMAKE_CXXFLAGS+="${{ matrix.cflags }}" \
                     CONFIG+=portable \
-                    PYTHON_VERSION=$PYTHON_VERSION "INCLUDEPATH+=$pythonLocation/include/python$PYTHON_VERSION" "LIBS += -L$pythonLocation/lib" \
+                    PYTHON_VERSION=$PYTHON_VERSION "INCLUDEPATH+=$pythonLocation/include/python$PYTHON_VERSION" "LIBS += -L$pythonLocation/lib  -lpython${PYTHON_VERSION} -Wl,-rpath,$pythonLocation/lib" \
                     ../../../Plugins
                 make -j 1
 
